@@ -1,0 +1,19 @@
+.contact-title h5 {
+    border: none;
+}
+.contact-title h5::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 15px;
+    background-color: #ee0f39;
+    top: 12px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 41%;
+}
+
+.contact textarea#exampleTextArea {
+    min-height: 250px;
+}

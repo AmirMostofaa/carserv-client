@@ -1,0 +1,51 @@
+.side-bar {
+    background-image: url(../../images/hero-bg.jpg);
+    background-position: left center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 99;
+}
+.side-bar::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0046E2;
+    z-index: -1;
+    opacity: .8;
+}
+.side-bar ul {
+    padding: 0;
+    margin: 0;
+    
+}
+.side-bar ul svg {
+    margin-right: 10px
+}
+.side-bar ul li {
+    list-style: none;
+    text-align: left;
+}
+.side-bar ul li a {
+    color: white;
+    padding: 1rem 0rem;
+    display: block;
+    padding-left: 10%;
+}
+.side-bar ul li a:hover {
+    background-color: rgb(26, 19, 80);
+    text-decoration: none;
+}
+.col-md-2.col-4.side-bar {
+    padding: 0;
+    margin: 0;
+    
+}
+.logout {
+    position: absolute;
+    left: 30%;
+    bottom: 40px;
+    /* padding-top: 200px; */
+}

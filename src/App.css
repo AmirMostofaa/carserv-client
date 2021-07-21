@@ -1,3 +1,13 @@
+.bg-brand {
+  background-color: #0046E2;
+}
+.text-brand {
+  color: #0046E2;
+}
+.text-p {
+  color: #36393B;
+}
+
 .App {
   text-align: center;
 }

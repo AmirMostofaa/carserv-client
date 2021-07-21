@@ -1,0 +1,13 @@
+.chooseItem img {
+    max-height: 70px;
+    padding-right: 15px;
+}
+.chooseItem h4 {
+    font-size: 1.5rem;
+}
+.chooseItem  p{
+    font-size: 1rem;
+}
+.single {
+    width: 50%;
+}

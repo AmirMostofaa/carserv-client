@@ -1,0 +1,7 @@
+a.nav-link a {
+    color: white !important;
+}
+a.nav-link img {
+    max-width: 37px;
+    border-radius: 30px;
+}
