@@ -15,10 +15,28 @@ import OrderList from './OrderList/OrderList';
 import AddService from './AddService/AddService';
 import MakeAdmin from './MakeAdmin/MakeAdmin';
 import ManageServices from './ManageServices/ManageServices';
+import { useContext } from 'react';
+import { UserContext } from '../../App';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 
 const Admin = () => {
+
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+    const [isTeam, setIsTeam] = useState(false)
+
+    useEffect(() => {
+        fetch('https://desolate-ravine-13432.herokuapp.com/isTeam', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({email: loggedInUser.email})
+        })
+        .then(res => res.json())
+        .then(data => setIsTeam(data))
+    }, [])
+
     return (
         <div>
             <div className="container-fluid">
@@ -34,23 +52,28 @@ const Admin = () => {
                                     <li>
                                     <Link to="/admin/bookingList"><FontAwesomeIcon icon={faList} />Booking List</Link>
                                     </li>
-                                    <li>
-                                    <Link to="/admin/review"><FontAwesomeIcon icon={faStar} />Review</Link>
-                                    </li>
                                     
+                                    {   isTeam && 
+                                        <> 
+                                            <li><Link to="/admin/review"><FontAwesomeIcon icon={faStar} />Review</Link>
+                                            </li>
+                                            
+                                            
+                                            <li>
+                                            <Link to="/admin/makeAdmin"><FontAwesomeIcon icon={faUserPlus} />Make Admin</Link>
+                                            </li>
+                                            <li>
+                                            <Link to="/admin/orderList"><FontAwesomeIcon icon={faList} />Order List</Link>
+                                            </li>
+                                            <li>
+                                            <Link to="/admin/addService"><FontAwesomeIcon icon={faPlus} />Add Service</Link>
+                                            </li>
+                                            <li>
+                                            <Link to="/admin/manageServices"><FontAwesomeIcon icon={faTasks} />Manage Services</Link>
+                                            </li> 
+                                        </>
                                     
-                                    <li>
-                                    <Link to="/admin/makeAdmin"><FontAwesomeIcon icon={faUserPlus} />Make Admin</Link>
-                                    </li>
-                                    <li>
-                                    <Link to="/admin/orderList"><FontAwesomeIcon icon={faList} />Order List</Link>
-                                    </li>
-                                    <li>
-                                    <Link to="/admin/addService"><FontAwesomeIcon icon={faPlus} />Add Service</Link>
-                                    </li>
-                                    <li>
-                                    <Link to="/admin/manageServices"><FontAwesomeIcon icon={faTasks} />Manage Services</Link>
-                                    </li>
+                                    }
                                 </ul>
                             </nav>
 

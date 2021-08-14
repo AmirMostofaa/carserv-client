@@ -7,7 +7,7 @@ const OrderList = () => {
     const [orderList, setOrderList] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:4040/orderList', {
+        fetch('https://desolate-ravine-13432.herokuapp.com/orderList', {
             method: 'GET',
             headers: {'Content-Type': 'application/json'}
         })

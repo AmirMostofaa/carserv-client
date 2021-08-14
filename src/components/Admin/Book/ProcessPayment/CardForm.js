@@ -39,7 +39,7 @@ const CardForm = ({serviceById, orders, setOrders}) => {
        /// Order Placing
       const newOrder = {...loggedInUser, ...orders, ...paymentMethod}
       console.log(newOrder)
-      fetch('http://localhost:4040/addOrder', {
+      fetch('https://desolate-ravine-13432.herokuapp.com/addOrder', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(newOrder)

@@ -10,7 +10,7 @@ const BookingList = () => {
     const [ordersViaEmail, setOrdersViaEmail] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4040/orderViaEmail?email='+loggedInUser.email, {
+        fetch('https://desolate-ravine-13432.herokuapp.com/orderViaEmail?email='+loggedInUser.email, {
             method: 'GET',
             headers: {'Content-Type': 'application/json'}
         })

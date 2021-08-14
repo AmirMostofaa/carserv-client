@@ -13,8 +13,6 @@
 - Order List
 - Specific Rules for Team/Admin
 
-In the project directory, you can run:
-
 ### `Technology`
 
 1. MongoDB
@@ -26,4 +24,4 @@ In the project directory, you can run:
 7. Firebase
 8. Heroku
 
-Open [https://carserv-76.web.app/](https://carserv-76.web.app/) to view it in the browser.
+# Open [Live](https://carserv-76.web.app/) to view it in the browser.
