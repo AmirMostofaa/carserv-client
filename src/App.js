@@ -11,6 +11,7 @@ import Admin from './components/Admin/Admin';
 import Login from './components/Login/Login';
 import { createContext } from 'react';
 import { useState } from 'react';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext()
 
@@ -32,9 +33,9 @@ const [loggedInUser, setLoggedInUser] = useState({});
           <Home/>
         </Route>
 
-        <Route path="/admin">
+        <PrivateRoute path="/admin">
           <Admin/>
-        </Route>
+        </PrivateRoute>
 
         <Route path="/login">
           <Login/>

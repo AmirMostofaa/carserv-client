@@ -9,7 +9,7 @@ import { UserContext } from '../../App';
 
 const Header = () => {
 
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const [loggedInUser] = useContext(UserContext);
 
     return (
         <div>
@@ -46,7 +46,7 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Link >
-                    <Link to="/admin" className="mr-4">
+                    <Link to="/admin/bookingList" className="mr-4">
                      Admin
                     </Link>
                     </Nav.Link>
@@ -60,7 +60,9 @@ const Header = () => {
                     {
                         loggedInUser.isSignIn ?
                         <Nav.Link>
-                            <img src={loggedInUser.image} alt="" />
+                            <Link to="/admin/bookingList">
+                                <img src={loggedInUser.image} alt="" />
+                            </Link>
                         </Nav.Link>
 
                         :

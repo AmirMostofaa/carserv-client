@@ -1,3 +1,17 @@
 .single-review {
-    width: 100%;
+    width: 22rem;
+    background-color: #E4F3FF;
+    border-radius: 8px;
+    padding: 20px 30px;
+    position: relative;
+}
+.single-review::before {
+    content: '“';
+    position: absolute;
+    left: 10px;
+    top: -40px;
+    width: 30px;
+    height: 30px;
+    font-size: 80px;
+    color: blue
 }

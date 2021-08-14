@@ -66,7 +66,7 @@ const Admin = () => {
                         <Switch>
                             <div className="col-md-10 col-8 side-bar-content p-5">
                                 
-                                <Route path="/admin/book">
+                                <Route path="/admin/book/:id">
                                     <Book/>
                                 </Route>
                                 <Route path="/admin/bookingList">

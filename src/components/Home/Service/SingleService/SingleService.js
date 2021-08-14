@@ -7,7 +7,7 @@ const SingleService = ({service}) => {
     return (
         <div>
 
-            <Link to={"/admin/book/"+service._id}>
+            <Link to={`/admin/book/${service._id}`}>
                 <div className="single text-center">
                     <img src={service.img} alt="" />
                     <h4 className="pt-4 pb-2">{service.name}</h4>

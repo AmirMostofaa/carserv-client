@@ -1,17 +1,17 @@
 # Carserv | Auto repair webapp
 
-[LIVE](https://carserv-76.web.app/).
-![](https://i.ibb.co/R4TC7r7/carserv.png)
+![Carserv_image](https://i.ibb.co/R4TC7r7/carserv.png)
 
 ## Available Features 🔥
-* Google Authentication
-* Add Services
-* Add Team Members
-* Add Review
-* Manage Services
-* Make order
-* Order List
-* ...More are coming..
+
+- Google Authentication
+- Add Services
+- Add Team Members
+- Add Review
+- Manage Services
+- Make order
+- Order List
+- Specific Rules for Team/Admin
 
 In the project directory, you can run:
 
@@ -27,5 +27,3 @@ In the project directory, you can run:
 8. Heroku
 
 Open [https://carserv-76.web.app/](https://carserv-76.web.app/) to view it in the browser.
-
-
