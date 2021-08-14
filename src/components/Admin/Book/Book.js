@@ -8,12 +8,12 @@ import ProcessPayment from './ProcessPayment/ProcessPayment';
 const Book = () => {
     const {id} = useParams();
 
-    console.log(id)
+    //console.log(id)
     const [serviceById, setServiceById] = useState([]);
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        //console.log("inside use effect", id)
+        console.log("inside use effect", id)
 
         fetch(`https://desolate-ravine-13432.herokuapp.com/services/${id}`, {
             method: 'GET',

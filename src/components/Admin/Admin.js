@@ -24,7 +24,7 @@ import { useEffect } from 'react';
 
 const Admin = () => {
 
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+    const [loggedInUser] = useContext(UserContext)
     const [isTeam, setIsTeam] = useState(false)
 
     useEffect(() => {
@@ -52,13 +52,12 @@ const Admin = () => {
                                     <li>
                                     <Link to="/admin/bookingList"><FontAwesomeIcon icon={faList} />Booking List</Link>
                                     </li>
+                                    <li>
+                                        <Link to="/admin/review"><FontAwesomeIcon icon={faStar} />Review</Link>
+                                    </li>
                                     
                                     {   isTeam && 
-                                        <> 
-                                            <li><Link to="/admin/review"><FontAwesomeIcon icon={faStar} />Review</Link>
-                                            </li>
-                                            
-                                            
+                                        <>                                             
                                             <li>
                                             <Link to="/admin/makeAdmin"><FontAwesomeIcon icon={faUserPlus} />Make Admin</Link>
                                             </li>
