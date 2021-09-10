@@ -31,7 +31,7 @@ const Service = () => {
                     </div>
 
                     <div className="col-md-12 pt-5">
-                        <div className="row d-flex flex-wrap">
+                        <div className="row d-flex flex-wrap justify-content-center">
 
                         
                             {
