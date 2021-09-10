@@ -15,6 +15,7 @@ Customer can make order and can pay.
 - Make order
 - Order List
 - Specific Rules for Team/Admin
+- Stripe Payment Integration
 
 ### `Technology`
 
