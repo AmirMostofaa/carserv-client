@@ -1,5 +1,7 @@
 # Carserv | Auto repair webapp
 
+A MERN Stack Auto Repairing Service Selling Website.
+
 ![Carserv_image](https://i.ibb.co/R4TC7r7/carserv.png)
 
 ## Available Features 🔥
